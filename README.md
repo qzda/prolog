@@ -15,7 +15,7 @@ const table = Object.keys(Backgrounds).reduce((obj, bg) => {
       if (!color.startsWith("bright")) {
         obj[bg][color] = prolog({
           msg: "hello",
-          bg:,
+          bg,
           color,
         });
       }
