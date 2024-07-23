@@ -1,14 +1,11 @@
 {
-  "name": "pro-log",
-  "version": "1.0.0",
+  "name": "@qzda/prolog",
+  "version": "1.0.1",
   "description": "console.log with color",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "index.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qzda/pro-log.git"
+    "url": "git+https://github.com/qzda/prolog.git"
   },
   "keywords": [
     "console.log",
@@ -18,7 +15,14 @@
   "author": "qzda <qinzhidao@foxmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/qzda/pro-log/issues"
+    "url": "https://github.com/qzda/prolog/issues"
   },
-  "homepage": "https://github.com/qzda/pro-log#readme"
+  "homepage": "https://github.com/qzda/prolog#readme",
+  "devDependencies": {
+    "@qzda/prolog": "latest"
+  },
+  "scripts": {
+    "build": "tsc ./index.ts --outDir dist --declaration",
+    "publish": "npm run build; npm publish"
+  }
 }
