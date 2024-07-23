@@ -3,6 +3,9 @@ import { Backgrounds, Colors } from "./config";
 type Color = keyof typeof Colors;
 type Background = keyof typeof Backgrounds;
 
+/**
+ * Print color information on the console
+ */
 export default function prolog(config: {
   msg: string;
   color?: Color;
