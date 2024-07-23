@@ -1,0 +1,24 @@
+{
+  "name": "pro-log",
+  "version": "1.0.0",
+  "description": "console.log with color",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qzda/pro-log.git"
+  },
+  "keywords": [
+    "console.log",
+    "log",
+    "color"
+  ],
+  "author": "qzda <qinzhidao@foxmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qzda/pro-log/issues"
+  },
+  "homepage": "https://github.com/qzda/pro-log#readme"
+}
