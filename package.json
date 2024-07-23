@@ -1,28 +1,16 @@
 {
   "name": "@qzda/prolog",
   "version": "1.0.1",
-  "description": "console.log with color",
+  "description": "Print color information on the console",
   "main": "index.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/qzda/prolog.git"
   },
-  "keywords": [
-    "console.log",
-    "log",
-    "color"
-  ],
   "author": "qzda <qinzhidao@foxmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/qzda/prolog/issues"
   },
-  "homepage": "https://github.com/qzda/prolog#readme",
-  "devDependencies": {
-    "@qzda/prolog": "latest"
-  },
-  "scripts": {
-    "build": "tsc ./index.ts --outDir dist --declaration",
-    "publish": "npm run build; npm publish"
-  }
+  "homepage": "https://github.com/qzda/prolog#readme"
 }
