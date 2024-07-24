@@ -6,7 +6,7 @@ type Background = keyof typeof Backgrounds;
 /**
  * Print color information on the console
  */
-export default function prolog(config: {
+function prolog(config: {
   msg: string;
   color?: Color;
   bg?: Background;
@@ -26,3 +26,6 @@ export default function prolog(config: {
 
   return _msg;
 }
+
+export { Backgrounds, Colors };
+export default prolog;

@@ -15,7 +15,7 @@ export const Colors = {
   brightMagenta: 95,
   brightCyan: 96,
   brightWhite: 97,
-};
+} as const;
 
 export const Backgrounds = {
   black: 40,
@@ -34,4 +34,4 @@ export const Backgrounds = {
   brightMagenta: 105,
   brightCyan: 106,
   brightWhite: 107,
-};
+} as const;

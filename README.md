@@ -1,12 +1,11 @@
 # prolog
 
-![1.png](./public/1.png)
+![prolog.png](https://qzda.netlify.app/prolog.png)
 
 ## use
 
 ```js
-import prolog from "@qzda/prolog";
-import { Colors, Backgrounds } from "@qzda/prolog/config";
+import prolog, { Colors, Backgrounds } from "@qzda/prolog";
 
 const table = Object.keys(Backgrounds).reduce((obj, bg) => {
   if (!bg.startsWith("bright")) {

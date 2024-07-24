@@ -1,16 +1,30 @@
 {
   "name": "@qzda/prolog",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Print color information on the console",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/qzda/prolog.git"
   },
-  "author": "qzda <qinzhidao@foxmail.com>",
+  "author": "qzda <qinzhidaoa@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/qzda/prolog/issues"
   },
-  "homepage": "https://github.com/qzda/prolog#readme"
+  "homepage": "https://github.com/qzda/prolog#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc",
+    "p:try": "npm publish --dry-run",
+    "p:npm": "npm run build; npm publish"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
 }
