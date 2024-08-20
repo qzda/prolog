@@ -1,4 +1,4 @@
 dist
-test.ts
+# test.ts
 node_modules
 # package-lock.json
