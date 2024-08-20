@@ -1,6 +1,0 @@
-{
-  "name": "@qzda/prolog",
-  "version": "1.0.2",
-  "exports": "./index.ts",
-  "exclude": [".github"]
-}
