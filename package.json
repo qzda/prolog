@@ -21,8 +21,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "p:try": "npm publish --dry-run",
-    "p:npm": "npm run build; npm publish"
+    "p": "npm publish",
+    "p:dry": "npm run p -dry"
   },
   "devDependencies": {
     "typescript": "^5.5.4"
