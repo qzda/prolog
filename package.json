@@ -1,6 +1,6 @@
 {
   "name": "@qzda/prolog",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Print color information on the console",
   "main": "dist/index.js",
   "files": [
