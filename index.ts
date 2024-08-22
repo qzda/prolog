@@ -36,25 +36,35 @@ const Backgrounds = {
   bgBrightWhite: 107,
 } as const;
 
+const OtherStyles = {
+  bold: 1,
+  italic: 3,
+  underline: 4,
+} as const;
+
 type Color = keyof typeof Colors;
 type Background = keyof typeof Backgrounds;
-type FuncParameterType = string | number;
+type OtherStyle = keyof typeof OtherStyles;
+type StrType = string | number;
 
 const Obj = {
   ...Object.keys(Colors).reduce((_obj, color) => {
-    _obj[color] = (str: FuncParameterType) =>
-      `\x1b[${Colors[color]}m${str}\x1b[0m`;
+    _obj[color] = (str: StrType) => `\x1b[${Colors[color]}m${str}\x1b[0m`;
     return _obj;
   }, {}),
 
   ...Object.keys(Backgrounds).reduce((_obj, bg) => {
-    _obj[bg] = (str: FuncParameterType) =>
-      `\x1b[${Backgrounds[bg]}m${str}\x1b[0m`;
+    _obj[bg] = (str: StrType) => `\x1b[${Backgrounds[bg]}m${str}\x1b[0m`;
+    return _obj;
+  }, {}),
+
+  ...Object.keys(OtherStyles).reduce((_obj, style) => {
+    _obj[style] = (str: StrType) => `\x1b[${OtherStyles[style]}m${str}\x1b[0m`;
     return _obj;
   }, {}),
 } as {
-  [key in Color | Background]: (str: FuncParameterType) => string;
+  [key in Color | Background | OtherStyle]: (str: StrType) => string;
 };
 
 export default Obj;
-export { Colors, Backgrounds };
+export { Colors, Backgrounds, OtherStyles };
