@@ -5,8 +5,6 @@
 ## use
 
 ```ts
-const logs = [];
-
 Object.keys(OtherStyles).forEach((style) => {
   logs.push(prolog[style](style));
 });
@@ -18,8 +16,6 @@ Object.keys(Colors).forEach((color) => {
 Object.keys(Backgrounds).forEach((bg) => {
   logs.push(prolog[bg](bg));
 });
-
-console.log(logs.join(" "));
 ```
 
 ## style
