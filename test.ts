@@ -1,16 +1,19 @@
-import prolog, { Colors, Backgrounds } from "./index";
+import prolog, { Colors, Backgrounds, OtherStyles } from "./index";
 
-const table = Object.keys(Backgrounds).reduce((obj, bg) => {
-  if (!bg.startsWith("bright")) {
-    obj[bg] = {};
-    Object.keys(Colors).forEach((color) => {
-      obj[bg][color] = prolog[bg](prolog[color]("hello"));
-      if (!color.startsWith("bright")) {
-        obj[bg][color] = prolog[bg](prolog[color]("hello"));
-      }
-    });
-  }
-  return obj;
-}, {});
+console.log(
+  Object.keys(OtherStyles)
+    .map((key) => prolog[key](key))
+    .join(" ")
+);
 
-console.table(table);
+console.log(
+  Object.keys(Colors)
+    .map((key) => prolog[key](key))
+    .join(" ")
+);
+
+console.log(
+  Object.keys(Backgrounds)
+    .map((key) => prolog[key](key))
+    .join(" ")
+);
