@@ -5,17 +5,25 @@
 ## use
 
 ```ts
-Object.keys(OtherStyles).forEach((style) => {
-  logs.push(prolog[style](style));
-});
+import prolog, { Colors, Backgrounds, OtherStyles } from "@qzda/prolog";
 
-Object.keys(Colors).forEach((color) => {
-  logs.push(prolog[color](color));
-});
+console.log(
+  Object.keys(OtherStyles)
+    .map((key) => prolog[key](key))
+    .join(" ")
+);
 
-Object.keys(Backgrounds).forEach((bg) => {
-  logs.push(prolog[bg](bg));
-});
+console.log(
+  Object.keys(Colors)
+    .map((key) => prolog[key](key))
+    .join(" ")
+);
+
+console.log(
+  Object.keys(Backgrounds)
+    .map((key) => prolog[key](key))
+    .join(" ")
+);
 ```
 
 ## style
