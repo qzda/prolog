@@ -1,5 +1,7 @@
 # prolog
 
+Print color information on the console.
+
 ![prolog.png](https://qzda.netlify.app/prolog.png)
 
 ## use
